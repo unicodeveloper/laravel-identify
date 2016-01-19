@@ -42,8 +42,136 @@ To get started, you'll need to publish all vendor assets:
 ```bash
 $ php artisan vendor:publish --provider="Unicodeveloper\Identify\IdentifyServiceProvider"
 ```
+## Browser Detection
 
-## Usage
+The browser method allows you to detect a user's browser and version.
+
+### Browsers Detected
+
+ * Vivaldi
+ * Opera
+ * Opera Mini
+ * WebTV
+ * Internet Explorer
+ * Pocket Internet Explorer
+ * Microsoft Edge
+ * Konqueror
+ * iCab
+ * OmniWeb
+ * Firebird
+ * Firefox
+ * Iceweasel
+ * Shiretoko
+ * Mozilla
+ * Amaya
+ * Lynx
+ * Safari
+ * Chrome
+ * Navigator
+ * GoogleBot
+ * Yahoo! Slurp
+ * W3C Validator
+ * BlackBerry
+ * IceCat
+ * Nokia S60 OSS Browser
+ * Nokia Browser
+ * MSN Browser
+ * MSN Bot
+ * Netscape Navigator
+ * Galeon
+ * NetPositive
+ * Phoenix
+ * SeaMonkey
+ * Yandex Browser
+
+### Usage
+
+```php
+/**
+ * Gets the version of the user's browser
+ * @return string
+ */
+Identify::browser()->getVersion()
+
+/**
+ * Gets the name of the user's browser
+ * @return string
+ */
+Identify::browser()->getName()
+```
+## OS Detection
+
+The os method allows you to detect a user's operating system and version.
+
+### OS Detected
+
+ * Windows
+ * Windows Phone
+ * OS X
+ * iOS
+ * Android
+ * Chrome OS
+ * Linux
+ * SymbOS
+ * Nokia
+ * BlackBerry
+ * FreeBSD
+ * OpenBSD
+ * NetBSD
+ * OpenSolaris
+ * SunOS
+ * OS2
+ * BeOS
+
+### Usage
+
+```php
+/**
+ * Gets the version of the user's Operating System
+ * @return string
+ */
+Identify::os()->getVersion()
+
+/**
+ * Gets the name of the user's Operating System
+ * @return string
+ */
+Identify::os()->getName()
+```
+
+## Device Detection
+
+The device method allows you to detect a user's device.
+
+### Device Detected
+
+ * iPad
+ * iPhone
+ * Windows Phone
+
+### Usage
+
+```php
+/**
+ * Gets the name of the user's device
+ * @return string
+ */
+Identify::device()->getName()
+```
+
+## Language Detection
+
+The language method allows you to detect a user's language.
+
+### Usage
+
+```php
+/**
+ * Gets the language that the user's browser contents are displayed in
+ * @return string
+ */
+Identify::lang()->getLanguage()
+```
 
 
 ## Contributing
