@@ -13,7 +13,7 @@
 
 [PHP](https://php.net) 5.4+ or [HHVM](http://hhvm.com) 3.3+, and [Composer](https://getcomposer.org) are required.
 
-To get the latest version of Laravel Imanee, simply add the following line to the require block of your `composer.json` file.
+To get the latest version of Laravel Identify, simply add the following line to the require block of your `composer.json` file.
 
 ```
 "unicodeveloper/laravel-identify": "1.0.*"
@@ -21,11 +21,11 @@ To get the latest version of Laravel Imanee, simply add the following line to th
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
-Once Laravel Imanee is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
+Once Laravel Identify is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
 * `Unicodeveloper\Identify\IdentifyServiceProvider::class`
 
-You can also use a Facade which provides a fluent way of manipulating images
+Also, register the Facade like so:
 
 ```php
 'aliases' => [
