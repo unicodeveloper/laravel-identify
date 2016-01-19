@@ -1,18 +1,31 @@
 {
-  "name": "unicodeveloper/laravel-identify",
-  "description": "A Laravel 5 Package Provider to Identify/detect a user's browser, device, operating system and Language",
-  "keywords": ["github", "laravel","Open Source","Evangelist", "Detect", "Identify", "Browser", "Operating System", "Language"],
-  "license": "MIT",
-  "authors": [
+    "name": "unicodeveloper/laravel-identify",
+    "description": "A Laravel 5 Package Provider to Identify/detect a user's browser, device, operating system and Language",
+    "keywords": ["github", "laravel","Open Source","Evangelist", "Detect", "Identify", "Browser", "Operating System", "Language"],
+    "license": "MIT",
+    "authors": [
       {
         "name": "unicodeveloper",
         "email": "prosperotemuyiwa@gmail.com"
       }
-  ],
-  "minimum-stability": "dev",
-  "require": {
+   ],
+   "minimum-stability": "stable",
+   "require": {
     "php": ">=5.5.9",
     "illuminate/support": "5.2.*",
     "sinergi/browser-detector":"6.0.*"
-  }
+   },
+   "autoload": {
+        "psr-4": {
+          "Unicodeveloper\\Identify\\": "src/"
+        }
+   },
+   "autoload-dev": {
+        "psr-4": {
+            "Unicodeveloper\\Identify\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
 }
