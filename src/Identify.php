@@ -58,6 +58,7 @@ class Identify {
 
     /**
      * Get all the methods applicable to Language detection
+     * e.g getLanguage()
      * @return \Sinergi\BrowserDetector\Language
      */
     public function lang()
