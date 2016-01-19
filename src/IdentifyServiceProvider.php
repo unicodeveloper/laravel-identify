@@ -20,7 +20,11 @@ class IdentifyServiceProvider extends ServiceProvider {
    */
   public function register()
   {
-      $this->app->bind('laravel-identify', 'Unicodeveloper\Identify\Identify');
+      $this->app->bind('laravel-identify', function() {
+
+          return new Identify;
+
+      });
   }
 
   /**
