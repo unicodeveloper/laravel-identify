@@ -2,10 +2,7 @@
 
 namespace Unicodeveloper\Identify;
 
-use Sinergi\BrowserDetector\Os;
-use Sinergi\BrowserDetector\Device;
-use Sinergi\BrowserDetector\Browser;
-use Sinergi\BrowserDetector\Language;
+use Sinergi\BrowserDetector\{ Os, Device, Browser, Language };
 
 class Identify {
 
@@ -42,7 +39,6 @@ class Identify {
         $this->device = new Device();
         $this->browser = new Browser();
         $this->language = new Language();
-
     }
 
     /**
@@ -50,7 +46,7 @@ class Identify {
      * e.g getName(), getVersion()
      * @return \Sinergi\BrowserDetector\Os
      */
-    public function os()
+    public function os() : Os
     {
         return $this->os;
     }
@@ -60,7 +56,7 @@ class Identify {
      * e.g getName()
      * @return \Sinergi\BrowserDetector\Device
      */
-    public function device()
+    public function device() : Device
     {
         return $this->device;
     }
@@ -70,7 +66,7 @@ class Identify {
      * e.g getName(), getVersion()
      * @return \Sinergi\BrowserDetector\Browser
      */
-    public function browser()
+    public function browser() : Browser
     {
         return $this->browser;
     }
@@ -80,7 +76,7 @@ class Identify {
      * e.g getLanguage()
      * @return \Sinergi\BrowserDetector\Language
      */
-    public function lang()
+    public function lang() : Language
     {
         return $this->language;
     }
