@@ -12,6 +12,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=5.5.9",
-    "illuminate/support": "5.2.*"
+    "illuminate/support": "5.2.*",
+    "sinergi/browser-detector":"6.0.*"
   }
 }
