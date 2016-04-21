@@ -16,7 +16,8 @@
     "sinergi/browser-detector": "6.0.*"
    },
    "require-dev": {
-     "phpunit/phpunit": "5.3.*"
+     "phpunit/phpunit": "5.3.*",
+     "mockery/mockery": "0.9.*"
    },
    "autoload": {
         "psr-4": {
