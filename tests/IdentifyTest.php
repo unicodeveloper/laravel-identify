@@ -3,14 +3,66 @@
 namespace Unicodeveloper\Identify\Test;
 
 use PHPUnit_Framework_TestCase;
+use Sinergi\BrowserDetector\{ Browser, Device, Language, Os };
+use Unicodeveloper\Identify\Identify;
 
 class IdentifyTest extends PHPUnit_Framework_TestCase
 {
+
     /**
-     * Test that true does in fact equal true
+     * Identify Object
+     * @var Identify
      */
-    public function testTrueIsTrue()
+    protected $identify;
+
+    protected function setUp()
     {
-        $this->assertTrue(true);
+        parent::setUp();
+        $this->identify = new Identify();
+    }
+
+    /**
+     * Test if Identify can be constructed
+     *
+     */
+    public function testIdentifyCanBeConstructed()
+    {
+        $this->assertInstanceOf(Identify::class, $this->identify);
+    }
+
+    /**
+     * Test if Os is constructed on Identify Object created
+     *
+     */
+    public function testOSIsInitializedOnIdentifyConstruction()
+    {
+        $this->assertInstanceOf(Os::class, $this->identify->os());
+    }
+
+    /**
+     * Test if Device is constructed on Identify Object created
+     *
+     */
+    public function testDeviceIsInitializedOnIdentifyConstruction()
+    {
+        $this->assertInstanceOf(Device::class, $this->identify->device());
+    }
+
+    /**
+     * Test if Os is constructed on Identify Object created
+     *
+     */
+    public function testBrowserIsInitializedOnIdentifyConstruction()
+    {
+        $this->assertInstanceOf(Browser::class, $this->identify->browser());
+    }
+
+    /**
+     * Test if Language is constructed on Identify Object created
+     *
+     */
+    public function testLanguageIsInitializedOnIdentifyConstruction()
+    {
+        $this->assertInstanceOf(Language::class, $this->identify->lang());
     }
 }
