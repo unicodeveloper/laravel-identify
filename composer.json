@@ -40,7 +40,7 @@
           "Unicodeveloper\\Identify\\IdentifyServiceProvider"
         ],
         "aliases": {
-          "Identify": "Unicodeveloper\\Identify\\Facade"
+          "Identify": "Unicodeveloper\\Identify\\Facades\\IdentifyFacade"
         }
       }
     }
