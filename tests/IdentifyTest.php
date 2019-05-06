@@ -2,11 +2,11 @@
 
 namespace Unicodeveloper\Identify\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Sinergi\BrowserDetector\{ Browser, Device, Language, Os };
 use Unicodeveloper\Identify\Identify;
 
-class IdentifyTest extends PHPUnit_Framework_TestCase
+class IdentifyTest extends TestCase
 {
 
     /**
