@@ -9,7 +9,7 @@
         "email": "prosperotemuyiwa@gmail.com"
       }
    ],
-   "minimum-stability": "stable",
+   "minimum-stability": "dev",
    "require": {
     "php": ">=5.5.9",
     "illuminate/support": "5.2 - 5.3",
