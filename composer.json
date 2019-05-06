@@ -9,10 +9,10 @@
         "email": "prosperotemuyiwa@gmail.com"
       }
    ],
-   "minimum-stability": "dev",
+   "minimum-stability": "stable",
    "require": {
     "php": ">=5.6.4",
-    "illuminate/support": "~5.2.0|~5.3.0",
+    "illuminate/support": "~5.2.0",
     "sinergi/browser-detector": "6.0.*"
    },
    "require-dev": {
