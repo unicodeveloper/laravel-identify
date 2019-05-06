@@ -37,7 +37,7 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Unicodeveloper\\Identify\\IdentifyServiceProvider",
+          "Unicodeveloper\\Identify\\IdentifyServiceProvider"
         ],
         "aliases": {
           "Identify": "Unicodeveloper\\Identify\\Facade"
