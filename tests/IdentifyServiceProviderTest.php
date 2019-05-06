@@ -3,10 +3,10 @@
 namespace Unicodeveloper\Identify\Test;
 
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Unicodeveloper\Identify\{ Identify, IdentifyServiceProvider };
 
-class IdentifyServiceProviderTest extends PHPUnit_Framework_TestCase
+class IdentifyServiceProviderTest extends TestCase
 {
 
     /**
