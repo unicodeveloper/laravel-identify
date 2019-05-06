@@ -33,5 +33,15 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
-    }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Unicodeveloper\\Identify\\IdentifyServiceProvider",
+        ],
+        "aliases": {
+          "Identify": "Unicodeveloper\\Identify\\Facade"
+        }
+      }
+  },
 }
