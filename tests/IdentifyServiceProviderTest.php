@@ -19,7 +19,7 @@ class IdentifyServiceProviderTest extends TestCase
      */
     protected $provider;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->mockApp = m::mock('\Illuminate\Contracts\Foundation\Application');

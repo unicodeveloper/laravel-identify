@@ -15,7 +15,7 @@ class IdentifyTest extends TestCase
      */
     protected $identify;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         parent::setUp();
         $this->identify = new Identify();
