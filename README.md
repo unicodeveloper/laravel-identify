@@ -12,17 +12,18 @@
 
 ## Installation
 
-[PHP](https://php.net) 5.4+ or [HHVM](http://hhvm.com) 3.3+, and [Composer](https://getcomposer.org) are required.
+[PHP](https://php.net) 7.1+ or [HHVM](http://hhvm.com) 3.3+, and [Composer](https://getcomposer.org) are required.
 
 To get the latest version of Laravel Identify, simply add the following line to the require block of your `composer.json` file.
 
 ```
-"unicodeveloper/laravel-identify": "1.1.*"
+"unicodeveloper/laravel-identify": "1.7.*"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
-Once Laravel Identify is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
+- If you're on Laravel 5.5 or above, that's all you need to do! Check out the usage examples below.
+- If you're on Laravel < 5.5, you'll need to register the service provider once the package is installed. Open up `config/app.php` and add the following to the `providers` array:
 
 * `Unicodeveloper\Identify\IdentifyServiceProvider::class`
 
