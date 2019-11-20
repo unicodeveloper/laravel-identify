@@ -175,6 +175,25 @@ The language method allows you to detect a user's language.
 Identify::lang()->getLanguage()
 ```
 
+## Mobile Detection
+
+The mobile method allows you to detect if user is on mobile.
+
+### Usage
+
+```php
+/**
+ * Returns true if any type of mobile device detected, including special ones
+ * @return boolean
+ */
+Identify::mobile()->isMobile()
+
+/**
+ * Return true if any type of tablet device is detected.
+ * @return boolean
+ */
+Identify::mobile()->isTablet()
+```
 
 ## Contributing
 
