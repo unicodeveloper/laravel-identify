@@ -31,6 +31,12 @@ class Identify {
     protected $language;
 
     /**
+     * Store the mobile object
+     * @var object
+     */
+    protected $mobile;
+
+    /**
      *  Create an Instance of Browser and Os
      */
     public function __construct()
@@ -39,6 +45,7 @@ class Identify {
         $this->device = new Device();
         $this->browser = new Browser();
         $this->language = new Language();
+        $this->mobile = new \Mobile_Detect();
     }
 
     /**
@@ -79,6 +86,16 @@ class Identify {
     public function lang() : Language
     {
         return $this->language;
+    }
+
+    /**
+     * Get all the methods applicable to Mobile detection
+     * e.g isMobile()
+     * @return \Mobile_Detect
+     */
+    public function mobile() : \Mobile_Detect
+    {
+        return $this->mobile;
     }
 
 }

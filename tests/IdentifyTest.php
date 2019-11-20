@@ -65,4 +65,13 @@ class IdentifyTest extends TestCase
     {
         $this->assertInstanceOf(Language::class, $this->identify->lang());
     }
+
+    /**
+     * Test if Mobile returns bool
+     *
+     */
+    public function testMobileIsInitializedOnIdentifyConstruction()
+    {
+        $this->assertInstanceOf(\Mobile_Detect::class, $this->identify->mobile());
+    }
 }
