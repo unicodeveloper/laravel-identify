@@ -67,7 +67,7 @@ class IdentifyTest extends TestCase
     }
 
     /**
-     * Test if Mobile returns bool
+     * Test if MobileDetect is constructed on Identify Object created
      *
      */
     public function testMobileIsInitializedOnIdentifyConstruction()
